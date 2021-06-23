@@ -15,7 +15,7 @@ useEffect(()=>{
     fetch(`https://jsonplaceholder.typicode.com/comments?postId=${id}`)
     .then(res=>res.json())
     .then(data=>setComments(data))
-},[])
+},[id])
     return (
         <div>
             <h1>thyis is Detail of {id}</h1>
